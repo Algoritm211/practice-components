@@ -1,5 +1,4 @@
 import React from 'react';
-import useDarkMode from '../../hooks/useDarkMode';
 import './Header.css'
 import HeaderLink from "./HeaderLink/HeaderLink";
 import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";

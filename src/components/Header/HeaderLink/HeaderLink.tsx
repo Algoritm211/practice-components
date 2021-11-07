@@ -1,4 +1,5 @@
 import React from 'react';
+import './HeaderLink.css'
 
 type HeaderLinkPropsType = {
   hintText: string,
