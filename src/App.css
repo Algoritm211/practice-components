@@ -1,0 +1,17 @@
+
+.main {
+ @apply
+ dark:bg-gray-800
+ bg-white
+ transition-all
+ duration-500
+}
+
+.content-section {
+ @apply
+ container
+ pt-28
+ mx-auto
+ text-gray-800
+ dark:text-white
+}

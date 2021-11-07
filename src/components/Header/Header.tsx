@@ -1,39 +1,54 @@
-import React, { useState } from 'react';
+import React from 'react';
+import useDarkMode from '../../hooks/useDarkMode';
 import './Header.css'
 
 const Header: React.FC = () => {
+  const [darkTheme, setDarkTheme] = useDarkMode();
+  const handleMode = () => setDarkTheme(!darkTheme);
+
   return (
-    <nav className="flex items-center justify-between bg-gray-800 p-5 fixed w-full z-10 top-0">
-      <div className="flex items-center text-white">
-        <a className="text-white no-underline hover:text-white hover:no-underline" href="#">
-          <div className="text-2xl pl-2 whitespace-nowrap">Alex S</div>
+    <nav className='navigation'>
+      <div className='flex items-center text-white'>
+        <a className='logo' href='#'>
+          <div className='text-2xl pl-2 whitespace-nowrap'>
+            Alex S
+          </div>
         </a>
       </div>
 
       <div className={`menu-block`}>
-        <ul className="flex justify-end">
-          <li className="mx-3">
-            <a className="menu-item group" href="#">
+        <ul className='flex justify-end'>
+          <li className='mx-3'>
+            <a className='menu-item group' href='#'>
               <span className='sidebar-hint group-hover:scale-100'>Search</span>
-              <i className="fas fa-search" />
+              <i className='fas fa-search' />
             </a>
           </li>
-          <li className="mx-3 text-center">
+          <li className='mx-3'>
+            <span className='menu-item theme-toggler group' onClick={handleMode}>
+              {darkTheme ? (
+                <i className='fas fa-sun' />
+              ) : (
+                <i className='fas fa-moon' />
+              )}
+            </span>
+          </li>
+          <li className='mx-3 text-center'>
             <a
-              className="menu-item group"
-              href="#"
+              className='menu-item group'
+              href='#'
             >
               <span className='sidebar-hint group-hover:scale-100'>Pro</span>
-              <i className="fas fa-rocket" />
+              <i className='fas fa-rocket' />
             </a>
           </li>
-          <li className="mx-3">
+          <li className='mx-3'>
             <a
-              className="menu-item group"
-              href="#"
+              className='menu-item group'
+              href='#'
             >
               <span className='sidebar-hint group-hover:scale-100'>Login</span>
-              <i className="fas fa-sign-in-alt" />
+              <i className='fas fa-sign-in-alt' />
             </a>
           </li>
         </ul>
