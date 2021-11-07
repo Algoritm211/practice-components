@@ -1,0 +1,55 @@
+
+.burger-button {
+  @apply
+  flex
+  items-center
+  px-3
+  py-2
+  border
+  rounded
+  text-gray-500
+  border-gray-600
+  hover:text-white
+  hover:border-white
+}
+
+.menu-block {
+  @apply
+  w-full
+  flex
+  md:items-center
+  w-auto
+  justify-end
+  pt-0
+  duration-300
+}
+
+.menu-item {
+  @apply
+  md:py-2
+  md:px-4
+  py-2
+  px-1
+  relative
+  inline-block
+  text-2xl
+  text-gray-600
+  no-underline
+  hover:text-gray-200
+}
+
+.sidebar-hint {
+  @apply
+  absolute
+  text-white
+  bg-indigo-400
+  font-bold
+  p-2
+  m-2
+  rounded-2xl
+  text-sm
+  top-full
+  left-0
+  transform
+  transition-all duration-200 scale-0 origin-left;
+}
