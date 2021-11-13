@@ -13,8 +13,8 @@ const HeaderLink: React.FC<HeaderLinkPropsType> = (
   return (
     <li className='mx-3'>
       <a className='menu-item group' href={href}>
-        <span className='sidebar-hint group-hover:scale-100'>{hintText}</span>
         {icon}
+      <div className='sidebar-hint group-hover:scale-100'>{hintText}</div>
       </a>
     </li>
   );
