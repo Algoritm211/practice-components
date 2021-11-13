@@ -1,0 +1,39 @@
+.footer {
+  @apply
+  bg-white
+  text-gray-900
+  dark:bg-gray-900
+  dark:text-white
+  py-8
+  sm:py-12
+}
+
+.footer-contact-section {
+  @apply
+  px-4
+  mt-8
+  mx-auto
+  md:mt-0
+}
+
+.footer-author-section {
+  @apply
+  mx-auto
+  flex
+  justify-center
+  sm:flex-wrap
+  sm:-mx-4
+  mt-6
+  pt-6
+  sm:mt-12
+  sm:pt-12
+  border-t
+}
+
+.react-icon {
+  @apply
+  animate-pulse
+  px-2
+  text-xl
+}
+
